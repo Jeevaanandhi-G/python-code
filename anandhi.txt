@@ -11,7 +11,7 @@ current_date= int(x[0])
 
 def date(): 
   if(current_date<birth_date):
-    if(current_mon<birth_date):
+    if(current_mon<birth_mon):
       print(s-1)
       
 
