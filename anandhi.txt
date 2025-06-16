@@ -1,0 +1,19 @@
+a=input('enter DOB')
+p= a.split(",")
+year= int(p[2])
+birth_mon= int(p[1])
+birth_date= int(p[0])
+s= 2025-year
+b= input('enter DOB')
+x= b.split(",")
+current_mon= int(x[1])
+current_date= int(x[0])
+
+def date(): 
+  if(current_date<birth_date):
+    if(current_mon<birth_date):
+      print(s-1)
+      
+
+
+date()
