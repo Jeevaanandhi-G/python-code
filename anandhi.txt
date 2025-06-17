@@ -1,19 +1,18 @@
-a=input('enter DOB')
-p= a.split(",")
-year= int(p[2])
-birth_mon= int(p[1])
-birth_date= int(p[0])
-s= 2025-year
-b= input('enter DOB')
-x= b.split(",")
-current_mon= int(x[1])
-current_date= int(x[0])
+from datetime import datetime 
+a= input("enter the DOB :")
+s= a.split(',')
+birth_day = int(s[0])
+birth_mon = int(s[1])
+birth_year = int(s[2])
+today = datetime.today()
+current_day = today.day
+current_mon = today.month
+current_year = today.year
+def date():
+    age = current_year - birth_year
+    if (current_mon < birth_mon) or ( current_mon== birth_mon and current_day < birth_day):
+        age -=1
+    return age  
 
-def date(): 
-  if(current_date<birth_date):
-    if(current_mon<birth_mon):
-      print(s-1)
-      
-
-
-date()
+final_age=date()
+print(final_age)
