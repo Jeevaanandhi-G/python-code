@@ -1,6 +1,6 @@
 from datetime import datetime 
-a= input("enter the DOB :")
-s= a.split(',')
+a= input("enter the DOB(dd-mm-yyyy) :")
+s= a.split('-')
 birth_day = int(s[0])
 birth_mon = int(s[1])
 birth_year = int(s[2])
@@ -15,4 +15,4 @@ def date():
     return age  
 
 final_age=date()
-print(final_age)
+print("the age is:",final_age)
