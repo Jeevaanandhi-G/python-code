@@ -1,10 +1,10 @@
-from datetime import datetime 
+from datetime import date
 a= input("enter the DOB(dd-mm-yyyy) :")
 s= a.split('-')
 birth_day = int(s[0])
 birth_mon = int(s[1])
 birth_year = int(s[2])
-today = datetime.today()
+today = date.today()
 current_day = today.day
 current_mon = today.month
 current_year = today.year
